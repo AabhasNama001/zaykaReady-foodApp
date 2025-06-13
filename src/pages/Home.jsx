@@ -3,7 +3,7 @@ import saleImg from "../assets/sale.png";
 
 const Home = () => {
   return (
-    <div className="w-screen flex items-center gap-x-24 min-h-[100vh] p-20 bg-[#f4e7cf]">
+    <div className="w-screen flex items-center gap-x-24 min-h-[100vh] p-20">
       <div className="left-hero w-1/2 flex flex-col items-start">
         <h1 className=" text-8xl text-red-950">
           Healthy <span className="text-red-600">Eating is an </span>{" "}
