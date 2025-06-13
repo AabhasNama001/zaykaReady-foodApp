@@ -1,7 +1,11 @@
 
 import React from 'react'
+
 import Navbar from './components/Navbar.jsx'
 import Mainroutes from "./Routes/Mainroutes.jsx";
+
+
+
 
 
 const App = () => {
@@ -9,9 +13,15 @@ const App = () => {
 
     <div className="bg-[#f4e7cf]">
 
+
       {/* <Navbar /> */}
 
-      <Mainroutes/>
+      
+
+    
+        <Mainroutes/>
+    
+
     </div>
   )
 }
