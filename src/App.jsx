@@ -6,7 +6,7 @@ import Mainroutes from "./Routes/Mainroutes";
 const App = () => {
   return (
     <div className="bg-[#f4e7cf]">
-      <Navbar />
+      {/* <Navbar /> */}
       <Mainroutes/>
     </div>
   );
