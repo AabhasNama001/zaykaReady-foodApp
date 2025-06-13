@@ -1,13 +1,14 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import Home from '../pages/Home.jsx'
-import Recipes from '../pages/Recipes.jsx'
-import CreateRecipe from '../pages/CreateRecipe.jsx'
-import ContactUs from '../pages/ContactUs.jsx'
-import PageNotFound from '../pages/PageNotFound.jsx'
-const Mainroutes = () => {
+import Home from '../pages/Home'
+import Recipes from '../pages/Recipes'
+import CreateRecipe from '../pages/CreateRecipe'
+import ContactUs from '../pages/ContactUs'
+import PageNotFound from '../pages/PageNotFound'
+
+const mainroutes = () => {
   return (
-    <div>
+    <div>   
         <Routes>
             <Route path='/' element={<Home/>} />
             <Route path = '/recipes' element={<Recipes/>}/>
@@ -19,4 +20,4 @@ const Mainroutes = () => {
   )
 }
 
-export default Mainroutes
+export default mainroutes
