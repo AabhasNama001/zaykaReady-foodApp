@@ -1,8 +1,10 @@
 import React from 'react'
-
+import { Outlet, useNavigate } from 'react-router-dom'
 const Recipes = () => {
   return (
-    <div>Recipes</div>
+    <div>Recipes
+    <Outlet/>
+    </div>
   )
 }
 
