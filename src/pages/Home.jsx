@@ -159,7 +159,7 @@ const Home = () => {
           <img
             src={girlImg1}
             alt=""
-            className="h-[55vh] object-cover sm:h-[60vw] lg:h-[38vw] xl:h-[70vh] xl:w-[70vh]"
+            className="h-[45vh] object-cover sm:h-[60vw] lg:h-[38vw] xl:h-[70vh] xl:w-[70vh]"
           />
         </div>
       </div>
