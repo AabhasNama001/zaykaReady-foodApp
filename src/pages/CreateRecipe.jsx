@@ -80,7 +80,7 @@ const CreateRecipe = () => {
           <option value="lunch">Lunch</option>
           <option value="dinner">Dinner</option>
         </select>
-        <button className=" bg-[#7965C1] py-3 rounded-sm active:scale-[0.98] text-white  md:text-[3vh]  md:p-4 xl:text-2xl">
+        <button className=" bg-[#7965C1] py-3 rounded-sm active:scale-[0.98] text-white  md:text-[3vh]  md:p-4 xl:text-2xl cursor-pointer">
           Create Recipe
         </button>
       </form>

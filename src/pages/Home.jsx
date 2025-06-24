@@ -6,6 +6,28 @@ import dish from "../assets/dish.jpg";
 import girlImg1 from "../assets/girl1.png";
 
 const Home = () => {
+  const team = [
+    {
+      name: "Alizeh Anderson",
+      title: "Senior Chef",
+      img: "../public/chef1.jpg"
+    },
+    {
+      name: "Angelina John",
+      title: "Master Chef",
+      img: "../public/chef2.jpg"
+    },
+    {
+      name: "Andre Smith",
+      title: "Professor",
+      img: "../public/chef3.jpg"
+    },
+    {
+      name: "Christina Chi",
+      title: "Psychologist",
+      img: "../public/chef4.jpg"
+    }
+  ];
   return (
     <div className=" min-h-[100vh] px-5 py-10 md:px-12">
       <div className="hero-section flex flex-col md:flex-row">
@@ -30,7 +52,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="categories lg:flex  md:mt-[10vw] lg:gap-[8vh] xl:mt-[12vh]">
+      <div className="categories lg:flex mt-[5vw]  md:mt-[10vw] lg:gap-[8vh] xl:mt-[12vh]">
         <div className="left-categ lg:w-4/5 xl:w-1/2">
           <h1 className="text-[8vw] pb-1 lg:text-[4.5vw]">Our Categories</h1>
           <div className="bottom-line w-[40vw] h-[3px] bg-red-500 mx-1 mb-[7vw] lg:w-[20vw] lg:mb-[4.5vw]"></div>
@@ -102,7 +124,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="get-start lg:flex  md:mt-[10vw] lg:gap-[6vh] lg:mt-[4vh] xl:mt-[2vh]">
+      <div className="get-start lg:flex mt-[5vw]  md:mt-[10vw] lg:gap-[6vh] lg:mt-[4vh] xl:mt-[2vh]">
         <div className="left-get-start lg:w-1/2">
           <h1 className="text-[8vw] pb-1 lg:text-[4.5vw]">
             Get Started Today!
@@ -162,6 +184,67 @@ const Home = () => {
             className="h-[45vh] object-cover sm:h-[60vw] lg:h-[38vw] xl:h-[70vh] xl:w-[70vh]"
           />
         </div>
+      </div>
+
+      <div className="top-foods flex flex-col  mt-[6vw] xl:mt-1 ">
+        <div>
+          <h1 className="text-[8vw] pb-1 lg:text-[4.5vw]">Top Foods</h1>
+          <div className="bottom-line w-[40vw] h-[3px] bg-red-500 mx-1 mb-[7vw] lg:w-[20vw] lg:mb-[4.5vw] xl:mb-6" ></div>
+        </div>
+        <div className="food-item-cards gap-10 flex flex-col md:flex-row md:flex-wrap md:justify-evenly xl:gap-3 xl:justify-start xl:flex-nowrap">
+          <div className="food-item-card flex flex-col items-center justify-center border-b-2 md:w-[40vw] xl:border-b-0  xl:w-[25vw]  p-5 rounded-4xl ">
+            <div className="xl:h-[30vh] xl:flex xl:items-center">
+              <img src="../public/pizzaCardImage.png" className="h-[25vh] object-cover sm:h-[40vw] md:h-[25vw] lg:h-[30vw] xl:h-[22vh] " />
+            </div>
+            <h3 className="text-[7vw] font-semibold md:text-[5vh] lg:text-5xl xl:text-4xl">Pizza</h3>
+            <p className="text-[5vw] font-normal text-red-500 md:text-[3vh]  mt-3 lg:text-3xl xl:text-2xl">Pizza <span className="text-gray-600">Love</span> <span className="text-[#0303cc]">Repeat !</span></p>
+          </div>
+          <div className="food-item-card flex flex-col items-center justify-center border-b-2 md:w-[40vw] xl:border-b-0  xl:w-[25vw]  p-5 xl:px-1 rounded-4xl ">
+            <img src="../public/burgerImage.png" className="h-[25vh] object-cover sm:h-[40vw] md:h-[25vw] lg:h-[30vw] xl:h-[30vh] " />
+            <h3 className="text-[7vw] font-semibold md:text-[5vh] lg:text-5xl xl:text-4xl ">Burger</h3>
+            <p className="text-[5vw] font-normal text-red-500 md:text-[3vh] mt-3 lg:text-3xl xl:text-2xl">Bite <span className="text-gray-600">The</span> <span className="text-[#0303cc]">Beast !</span></p>
+          </div>
+          <div className="food-item-card flex flex-col items-center justify-center border-b-2 md:w-[40vw] xl:border-b-0  xl:w-[25vw]  p-5 xl:px-1 rounded-4xl ">
+            <img src="../public/coldCoffeImage.png" className="h-[25vh] object-cover sm:h-[40vw] md:h-[25vw] lg:h-[30vw] xl:h-[30vh] " />
+            <h3 className="text-[7vw] font-semibold md:text-[5vh] lg:text-5xl xl:text-4xl ">Shakes</h3>
+            <p className="text-[5vw] font-normal text-red-500 md:text-[3vh] mt-3 lg:text-3xl xl:text-2xl">Whip <span className="text-gray-600">Sip</span> <span className="text-[#0303cc]">Wow !</span></p>
+          </div>
+          <div className="food-item-card flex flex-col items-center justify-center border-b-2 md:w-[40vw] xl:border-b-0  xl:w-[25vw]  p-5 xl:px-1 rounded-4xl ">
+            <img src="../public/noodlesImage.png" className="h-[25vh] object-cover sm:h-[40vw] md:h-[25vw] lg:h-[30vw] xl:h-[30vh] " />
+            <h3 className="text-[7vw] font-semibold md:text-[5vh] lg:text-5xl xl:text-4xl ">Chinese</h3>
+            <p className="text-[5vw] font-normal text-red-500 md:text-[3vh] mt-3 lg:text-3xl xl:text-2xl">Chopsticks <span className="text-gray-600">Chill</span> <span className="text-[#0303cc]">Chow !</span></p>
+          </div>
+        </div>
+      </div>
+
+
+      <div className="   mt-[15vh] xl:mt-10">
+        {/* Team Section */}
+        
+        <div className="mb-10">
+        <h2 className="text-[5vw]  lg:text-[3vw] text-[#b23a29] xl:text-[1.8vw] xl:-mb-6">Foody</h2>
+          <h3 className=" text-[8vw] font-semibold mb-[2vw] md:text-[6vw] md:mb-2 lg:text-[4.5vw] ">Meet Our Best Team</h3>
+          <div className="bottom-line w-[40vw] h-[3px] bg-red-500 mx-1 mb-[7vw] lg:w-[20vw] lg:mb-[4.5vw] xl:mb-6" ></div>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6  mb-12">
+          {team.map((member) => (
+            <div
+              key={member.name}
+              className="bg-white rounded-xl p-4 shadow-md  "
+            >
+              <div className="sm:h-[31vw] sm:flex sm:justify-center">
+                <img
+                  src={member.img}
+                  alt={member.name}
+                  className="w-full h-auto object-cover rounded-lg mb-4"
+                /></div>
+              <h4 className="font-bold text-lg">{member.name}</h4>
+              <p className="text-sm text-gray-600">{member.title}</p>
+            </div>
+          ))}
+        </div>
+
+        
       </div>
     </div>
   );
